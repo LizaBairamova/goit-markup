@@ -433,20 +433,15 @@
                 </label></div>
                 <div class="coment-field">
                     <label for="comment" class="input-text" for="comment">Комментарий
-                        <textarea name="comment" id="comment" rows="5" placeholder="Введите текст" class="form-comment"></textarea>
+                        <textarea name="comment" id="comment" placeholder="Введите текст" class="form-comment"></textarea>
                     </label>
                 </div>
                 <div class="form-checkbox">
-                    <label class="checkbox-text">
-                        <input type="checkbox" name="policy" class="checkbox">
-                        <span class="checkbox-policy">
-                            <svg class="checkbox-icon" width="16" height="15">
-                                <use href="./images/forms#icon-Vector.svg"></use>
-                            </svg>
-                        </span>
-                        Соглашаюсь с рассылкой и принимаю
-                        <a href="" class="policy-link">Условия договора</a>
+                    <input type="checkbox" name="policy" id="policy" class="policy-check visually-hidden"/>
+                    <label for="policy" class="check-text"> Соглащаюсь с рассылкой и принимаю
+                    <a class="conditions" href=""> Условия договора </a>
                     </label>
+                
                 </div>
                 <button type="submit" class="btn-form">Отправить</button>
              </form>

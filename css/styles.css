@@ -623,7 +623,7 @@ body {
 }
 .modal {
   width: 528px;
-  min-height: 581px;
+  min-height: 528px;
   background-color: var(--main-text-color);
   border-radius: 4px;
   position: absolute;
@@ -649,9 +649,16 @@ body {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-icon {
+  fill: var(--second-main-color);
+}
 .form-input:focus,
 .form-input:hover {
   border-color: var(--accent-color);
+}
+.form-input:focus + .form-icon,
+.form-input:hover + .form-icon {
+  fill: var(--accent-color);
 }
 .form-input::placeholder {
   font-style: normal;
@@ -688,8 +695,12 @@ body {
   fill: var(--backgroung-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-modal-btn-icon:hover,
-.close-modal-btn-icon:focus {
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close-modal-btn:hover .close-modal-btn-icon,
+.close-modal-btn:focus .close-modal-btn-icon {
   fill: var(--accent-color);
 }
 .is-hidden {
@@ -800,6 +811,9 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--backgroung-color);
 }
+.checkbox-icon {
+  fill: var(--second-main-color);
+}
 .form-input:hover .form-icon,
 .form-input:focus .form-icon {
   fill: var(--accent-color);
@@ -880,5 +894,45 @@ body {
 }
 .form-field:hover,
 .form-field:focus {
+  color: var(--accent-color);
+}
+.check-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+}
+.check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid var(--second-main-color);
+  display: block;
+  margin-right: 7px;
+}
+.policy-check:checked + .check-text::before {
+  border: none;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.conditions {
   color: var(--accent-color);
 }
