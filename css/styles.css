@@ -916,7 +916,7 @@ body {
 }
 .policy-check:checked + .check-text::before {
   border: none;
-  background-image: url(../images/check.svg);
+  background-image: url(../images/icon-checks.svg#icon-Vector);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
