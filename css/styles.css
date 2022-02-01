@@ -762,6 +762,8 @@ body {
   height: 50px;
   padding: 0;
   padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: var(--main-text-color);
   outline: none;
   background-color: #2f303a;
@@ -769,6 +771,8 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.25;
 }
 .btn-footer {
   position: relative;
@@ -784,12 +788,12 @@ body {
   letter-spacing: 0.06em;
   border: none;
   display: flex;
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
 }
 .btn-footer-text {
-  display: block;
-  text-align: left;
-  margin-left: 29px;
-  padding-top: 10px;
   padding-right: 10px;
 }
 .btn-icon-footer {
